@@ -6,11 +6,13 @@
 // };
 
 // export default config;
-// postcss.config.mjs - AFTER
-export default {
+
+
+// myv
+/** @type {import('postcss').Postcss} */
+const config = {
   plugins: {
-    '@tailwindcss/postcss': {}, // <-- Use the new package name here
-    'autoprefixer': {}, // Keep other plugins like autoprefixer
-    // ... other plugins
+    tailwindcss: {},
+    autoprefixer: {},
   },
-};
+}
